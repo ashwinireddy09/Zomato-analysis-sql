@@ -51,7 +51,7 @@ CREATE TABLE Zomato_analysis (
 ```
 
 ### 2. Data Exploration & Cleaning
-**- Record Count : Determine the total number of restaurant records in the dataset.
+- Record Count : Determine the total number of restaurant records in the dataset.
 - Unique Restaurant Count: Find how many unique restaurants are in the dataset.
 - Category (Cuisines) Count: Identify all unique cuisines in the dataset.
 - Unique City Count: Find how many unique cities are covered.
@@ -230,6 +230,32 @@ SELECT
     SUM(CASE WHEN Has_Online_delivery = 'Yes' THEN 1 ELSE 0 END) AS Online_Delivery_Restaurants
 FROM zomato_analysis;
 
+```
+## Findings
+
+- Customer Preferences: Majority of restaurants fall under the mid-range cost category.
+
+- Premium Dining: High-value restaurants are concentrated in metro cities.
+
+- Top Cuisines: North Indian, Chinese, and Fast Food dominate the market.
+
+- Online Delivery Trend: A significant percentage of restaurants support online delivery.
+
+- Popular Cities: Cities like Bangalore, Delhi, and Mumbai lead in restaurant count and ratings.
+
+## Reports
+
+- Restaurant Performance Report: Based on ratings, cost, and delivery availability.
+
+- City-wise Insights: Restaurant distribution and pricing trends.
+
+- Cuisine Analysis: Popular cuisines and their average ratings.
+
+- Pricing Strategy: Budget vs Mid-range vs Premium segmentation.
+
+## Conclusion
+
+This Zomato Restaurant Analysis SQL Project provides a complete hands-on learning experience in SQL, covering database setup, data cleaning, exploratory data analysis, and business-driven queries. The insights derived from this project help understand restaurant pricing, customer preferences, city-wise restaurant performance, and online delivery trends—making it highly relevant for real-world data analyst roles.
 
 
 
