@@ -26,7 +26,7 @@ Derive meaningful business insights using SQL queries.
 
 ## Project Structure
 
-- **Database Creation**: The project starts by creating a database named `Zomato_analysis`.
+- **Database Creation**: The project starts by creating a database named `Zomato_analysis_p1`.
 - **Table Creation**: A table named `Zomato_analysis` is created to store restaurant-related data. The table structure includes columns for restaurant ID, restaurant name, country, city, cuisine type, average cost for two, currency, rating, votes, online delivery availability, price range, and opening date.
  
 ```sql
