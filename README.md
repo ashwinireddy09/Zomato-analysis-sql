@@ -79,7 +79,7 @@ WHERE
 
 The following SQL queries were developed to answer specific business questions:
 
-1. **Convert the Average cost for 2 column into USD dollars (currently the Average cost for 2 in local currencies**:
+1. Convert the Average cost for 2 column into USD dollars (currently the Average cost for 2 in local currencies:
 ```sql
 SELECT 
     RestaurantID,
