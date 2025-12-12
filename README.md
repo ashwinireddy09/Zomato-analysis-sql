@@ -4,24 +4,20 @@ Zomato Data Analysis project using MySQL to explore restaurant trends across cit
 
 Project Overview
 
-Project Title: Zomato Restaurant Analysis
-Level: Beginner to Intermediate
-Database: zomato_analysis_p1
+- Project Title: Zomato Restaurant Analysis
+- Level: Beginner to Intermediate
+- Database: zomato_analysis_p1
 
 This project is designed to demonstrate SQL skills and techniques used by data analysts to explore, clean, and analyze real-world restaurant data from Zomato. The project involves setting up a Zomato database, performing data cleaning, exploratory data analysis (EDA), and answering key business questions using SQL. This project is ideal for beginners who want hands-on practice with SQL using a real business dataset.
 
 
 ## Objectives
 
-Set up the Zomato restaurant database.
-
-Perform data cleaning and handle missing values.
-
-Conduct exploratory data analysis (EDA).
-
-Analyze restaurant trends, pricing, ratings, and customer preferences.
-
-Derive meaningful business insights using SQL queries.
+- Set up the Zomato restaurant database.
+- Perform data cleaning and handle missing values.
+- Conduct exploratory data analysis (EDA).
+- Analyze restaurant trends, pricing, ratings, and customer preferences.
+- Derive meaningful business insights using SQL queries.
 
 
 ## Project Structure
@@ -50,7 +46,7 @@ CREATE TABLE Zomato_analysis (
 
 ```
 
-### 2. Data Exploration & Cleaning
+# 2. Data Exploration & Cleaning
 - Record Count : Determine the total number of restaurant records in the dataset.
 - Unique Restaurant Count: Find how many unique restaurants are in the dataset.
 - Category (Cuisines) Count: Identify all unique cuisines in the dataset.
@@ -79,7 +75,7 @@ WHERE
 
 ```
 
-### 3. Data Analysis & Findings
+# 3. Data Analysis & Findings
 
 The following SQL queries were developed to answer specific business questions:
 
@@ -94,7 +90,7 @@ SELECT
 FROM zomato_analysis;
 ```
 
-2. ***Find the Numbers of Resturants based on City and Country.**:
+2. Find the Numbers of Resturants based on City and Country.:
 ```sql
 
 SELECT 
@@ -107,7 +103,7 @@ ORDER BY Total_Restaurants DESC;
 
 ```
 
-3. ***Numbers of Resturants opening based on Year, Quarter, Month**:
+3. Numbers of Resturants opening based on Year, Quarter, Month:
 ```sql
 
 SELECT 
@@ -136,7 +132,7 @@ ORDER BY Year, Quarter;
 
 ```
 
-4. ***Count of Resturants based on Average Ratings**:
+4. Count of Resturants based on Average Ratings:
 ```sql
 YEAR(Datekey_Opening) AS Year,
     MONTH(Datekey_Opening) AS Month,
@@ -147,7 +143,7 @@ ORDER BY Year, Month;
 
 ```
 
-5. ***Create buckets based on Average Price of reasonable size and find out how many resturants falls in each buckets**:
+5. Create buckets based on Average Price of reasonable size and find out how many resturants falls in each buckets:
 
 ```sql
 SELECT 
@@ -164,7 +160,7 @@ ORDER BY Total_Restaurants DESC;
 
 ```
 
-6. ***Percentage of Resturants based on "Has_Table_booking"**:
+6. Percentage of Resturants based on "Has_Table_booking":
 ```sql
 SELECT 
     Has_Table_booking,
@@ -178,7 +174,7 @@ GROUP BY Has_Table_booking;
 
 ```
 
-7. ***Percentage of Resturants based on "Has_Online_delivery"**:
+7. Percentage of Resturants based on "Has_Online_delivery":
 ```sql
 SELECT 
     Has_Online_delivery,
@@ -191,7 +187,7 @@ FROM zomato_analysis
 GROUP BY Has_Online_delivery;
 
 ```
-8. ***Develop Charts based on Cusines, City, Ratings (Candidate have to think about new KPI to analyse)**:
+8. Develop Charts based on Cusines, City, Ratings (Candidate have to think about new KPI to analyse):
 ```sql
 SELECT 
     Has_Online_delivery,
@@ -219,7 +215,7 @@ ORDER BY Rating DESC;
 
 
 ```
-9. B***uild a Dashboard for the KPI's Above.**:
+9. Build a Dashboard for the KPI's Above.:
 
 ```sql
 SELECT  
